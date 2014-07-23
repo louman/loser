@@ -21,8 +21,6 @@ module Loser
     false
   end
 
-  private
-
   def safe
     yield
   rescue
