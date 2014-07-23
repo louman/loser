@@ -21,10 +21,4 @@ module Loser
     false
   end
 
-  def safe
-    yield
-  rescue
-    fail 'Erro inesperado, tente novamente.'
-  end
-
 end
