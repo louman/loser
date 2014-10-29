@@ -16,9 +16,14 @@ module Loser
     errors.join(separator)
   end
 
-  def fail(msg)
+  def lose(msg)
     self.errors << msg
     false
+  end
+
+  def fail(msg)
+    warn "[DEPRECATION] `fail` is deprecated.  Please use `lose` instead."
+    lose(msg)
   end
 
 end
